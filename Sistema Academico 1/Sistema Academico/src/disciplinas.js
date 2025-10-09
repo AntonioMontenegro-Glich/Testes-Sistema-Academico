@@ -1,6 +1,6 @@
 function calcularMedia(nota1, nota2) {
   try {
-    if (nota1 < 0  nota2 < 0) {
+    if (nota1 < 0 || nota2 < 0) {
         console.error("As notas não podem ser negativas"); 
     }
 
@@ -13,7 +13,7 @@ function calcularMedia(nota1, nota2) {
 
 function exibirStatus(media) {
   try {
-    if (media < 0  media > 10) {
+    if (media < 0 || media > 10) {
       console.error("A média deve estar entre 0 e 10");
     }
 
