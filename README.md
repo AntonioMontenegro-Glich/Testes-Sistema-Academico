@@ -172,7 +172,3 @@ Com o processo de inspeção, correção e automação de testes, o sistema torn
 * **Professora:** Rafaella Matos
 * **Período Letivo:** 2025.2
 
-
-
-Deseja que eu adicione também uma **versão do README com emojis e estilo visual (Markdown avançado)** para deixar mais bonito no GitHub (com cores e ícones de cada seção)?
-Posso gerar essa variação estética sem mudar o conteúdo técnico.
