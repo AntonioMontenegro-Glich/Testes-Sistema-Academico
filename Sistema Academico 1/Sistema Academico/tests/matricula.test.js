@@ -24,5 +24,10 @@ describe("Função podeAbrirNovaTurma", () => {
       expect(podeAbrirNovaTurma(listaAlunos)).toBe(true);
     });
   })
+
+  test("deve retornar erro pelo tipo de params", () => {
+    const listaAlunosNumber = 3;
+    expect(podeAbrirNovaTurma(listaAlunosNumber)).toThrow("A lista de alunos deve ser um Array");
+  })
 });
 
