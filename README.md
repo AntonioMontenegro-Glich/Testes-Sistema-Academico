@@ -84,10 +84,10 @@ Cada função possui um arquivo de teste correspondente, cobrindo os principais 
 
 ```bash
 # Instalar dependências
-npm install
+yarn install
 
 # Executar todos os testes
-npm test
+yarn test
 ```
 
 ---
