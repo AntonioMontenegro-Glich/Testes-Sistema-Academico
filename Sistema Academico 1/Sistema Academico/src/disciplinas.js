@@ -9,7 +9,7 @@ function calcularMedia(nota1, nota2) {
     return (nota1 + nota2) / 2;
 
   } catch (error) {
-    throw new Error("Erro ao calcular a média:", error.message);
+    throw new Error(error.message);
   }
 }
 
@@ -17,10 +17,6 @@ function exibirStatus(media) {
   try {
     if (typeof media !== "number") {
       throw new Error("Tipo de valor não válido")
-    }
-
-    if (media < 0 || media > 10) {
-      throw new Error("A média deve estar entre 0 e 10");
     }
 
     if (media < 3) {
@@ -31,7 +27,7 @@ function exibirStatus(media) {
       return "Aprovado por média";
     }
   } catch (error) {
-    throw new Error("Erro ao exibir média do aluno, contate o suporte de TI da faculdade", error.message);
+    throw new Error(error.message);
   }
 }
 

@@ -5,9 +5,6 @@ const podeAbrirNovaTurma = (listaDeAlunos) => {
     throw new Error("A lista de alunos deve ser um Array")
   }
 
-  if (listaDeAlunos.length < LIMITE_ALUNOS_ABERTURA_TURMA) {
-    throw new Error("A lista de alunos deve ser maior que 2");
-  }
   return listaDeAlunos.length >= LIMITE_ALUNOS_ABERTURA_TURMA; 
 };
 

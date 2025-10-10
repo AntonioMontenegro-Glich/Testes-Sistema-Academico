@@ -1,4 +1,3 @@
-import { describe } from "yargs";
 import { calcularMedia, exibirStatus } from "../src/disciplinas.js";
 
 describe("Função calcularMedia", () => {
@@ -14,10 +13,10 @@ describe("Função calcularMedia", () => {
             const nota2 = 8;
             expect(() => calcularMedia(nota1, nota2)).toThrow("As notas não podem ser negativas");
         })
-        test("deve passar pelo teste, pois a média será válida", () => {
+        test("deve lançar erro quando notas são maiores que 10", () => {
             const notaValida1 = 11;
             const notaValida2 = 12;
-            expect(calcularMedia(notaValida1, notaValida2)).toThrow("As notas não podem ser maiores que 10");
+            expect(() => calcularMedia(notaValida1, notaValida2)).toThrow("As notas não podem ser maiores que 10");
         })
         test("deve passar pelo teste, pois a nota vai ser menor que 3 e vai exibir o status de reprovado", () => {
             const notaValida1 = 2;

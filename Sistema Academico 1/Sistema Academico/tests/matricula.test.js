@@ -1,4 +1,4 @@
-import { LIMITE_ALUNOS_ABERTURA_TURMA } from "../src/constantes.js";
+//import { LIMITE_ALUNOS_ABERTURA_TURMA } from "../src/constantes.js";
 import { podeAbrirNovaTurma } from "../src/matricula.js";
 
 describe("Função podeAbrirNovaTurma", () => {
@@ -27,7 +27,7 @@ describe("Função podeAbrirNovaTurma", () => {
 
   test("deve retornar erro pelo tipo de params", () => {
     const listaAlunosNumber = 3;
-    expect(podeAbrirNovaTurma(listaAlunosNumber)).toThrow("A lista de alunos deve ser um Array");
+    expect(() => podeAbrirNovaTurma(listaAlunosNumber)).toThrow("A lista de alunos deve ser um Array");
   })
 });
 
