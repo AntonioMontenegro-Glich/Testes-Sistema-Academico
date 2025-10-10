@@ -13,6 +13,10 @@ function calcularMedia(nota1, nota2) {
 
 function exibirStatus(media) {
   try {
+    if(typeof media !== "number) {
+        console.error("Tipo de valor não válido")
+       }
+    
     if (media < 0 || media > 10) {
       console.error("A média deve estar entre 0 e 10");
     }
