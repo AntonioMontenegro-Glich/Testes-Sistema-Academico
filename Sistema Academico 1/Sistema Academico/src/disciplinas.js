@@ -3,7 +3,9 @@ function calcularMedia(nota1, nota2) {
     if (nota1 < 0 || nota2 < 0) {
       throw new Error("As notas não podem ser negativas");
     }
-
+    if (nota1 > 10 || nota2 > 10) {
+      throw new Error("As notas não podem ser maiores que 10");
+    } 
     return (nota1 + nota2) / 2;
 
   } catch (error) {
